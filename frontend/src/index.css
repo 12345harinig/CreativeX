@@ -1,0 +1,58 @@
+:root {
+  --primary: #7c3aed; /* Violet 600 */
+  --primary-dark: #5b21b6; /* Violet 800 */
+  --primary-light: #a78bfa; /* Violet 300 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f5ff; /* soft lavender background */
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #e5e0fa;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(124, 58, 237, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
